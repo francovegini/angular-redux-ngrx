@@ -13,29 +13,30 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomePage,
-    ProductListComponent,
-    NavbarComponent,
-    ShoppingCartComponent,
-  ],
-  entryComponents: [],
-  imports: [
-    BrowserModule,
-    IonicModule.forRoot(),
-    AppRoutingModule,
-    HttpClientModule,
-    StoreModule.forRoot({
-      cart: cartReducer
-    })
-  ],
-  providers: [
-    {
-      provide: RouteReuseStrategy,
-      useClass: IonicRouteStrategy
-    }
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HomePage,
+        ProductListComponent,
+        NavbarComponent,
+        ShoppingCartComponent,
+    ],
+    entryComponents: [],
+    imports: [
+        BrowserModule,
+        IonicModule.forRoot(),
+        AppRoutingModule,
+        HttpClientModule,
+        StoreModule.forRoot({
+            cart: cartReducer
+        })
+    ],
+    providers: [
+        {
+            provide: RouteReuseStrategy,
+            useClass: IonicRouteStrategy
+        }
+    ],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

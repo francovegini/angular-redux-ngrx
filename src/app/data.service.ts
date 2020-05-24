@@ -3,16 +3,17 @@ import { HttpClient } from '@angular/common/http';
 import { ProductModel } from './models/product.model';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class DataService {
-  public url = 'http://localhost:7189/v1';
+    public url = 'http://localhost:7189/v1';
 
-  constructor(
-    private http: HttpClient
-  ) { }
+    constructor(
+        private http: HttpClient
+    ) {
+    }
 
-  getProducts() {
-    return this.http.get<ProductModel[]>(`${this.url}/products`);
-  }
+    getProducts() {
+        return this.http.get<ProductModel[]>(`${this.url}/products`);
+    }
 }
