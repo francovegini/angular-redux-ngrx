@@ -1,7 +1,7 @@
-import { ActionTypes } from '../actions/cart.action';
-import { ActionModel } from '../models/action.model';
-import { CartModel } from '../models/cart.model';
-import { ProductModel } from '../models/product.model';
+import {ActionTypes} from '../actions/cart.action';
+import {ActionModel} from '../models/action.model';
+import {CartModel} from '../models/cart.model';
+import {ProductModel} from '../models/product.model';
 
 export const cart = new CartModel();
 

@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { select, Store } from '@ngrx/store';
-import { CartModel } from 'src/app/models/cart.model';
+import {Component, OnInit} from '@angular/core';
+import {Observable} from 'rxjs';
+import {select, Store} from '@ngrx/store';
+import {CartModel} from 'src/app/models/cart.model';
 
 @Component({
     selector: 'app-navbar',

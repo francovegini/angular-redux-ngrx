@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
-import { select, Store } from '@ngrx/store';
-import { CartModel } from './models/cart.model';
+import {Component} from '@angular/core';
+import {Observable} from 'rxjs';
+import {select, Store} from '@ngrx/store';
+import {CartModel} from './models/cart.model';
 
 @Component({
     selector: 'app-root',

@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { Store } from '@ngrx/store';
-import { Add } from 'src/app/actions/cart.action';
-import { DataService } from 'src/app/data.service';
-import { CartModel } from 'src/app/models/cart.model';
-import { ToastController } from '@ionic/angular';
+import {Component, OnInit} from '@angular/core';
+import {Store} from '@ngrx/store';
+import {Add} from 'src/app/actions/cart.action';
+import {DataService} from 'src/app/data.service';
+import {CartModel} from 'src/app/models/cart.model';
+import {ToastController} from '@ionic/angular';
 
 @Component({
     selector: 'app-product-list',
